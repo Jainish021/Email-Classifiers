@@ -22,8 +22,8 @@ def extract(contents):
 
 # Importing the data from all the training file, preproccessing the data using extract function and creating a vocalubulary.
 def vocab():
-    filePaths = (list(paths.list_files("enron1/train/ham")) +
-                 list(paths.list_files("enron1/train/spam")) + list(paths.list_files("enron4/train/ham")) + list(paths.list_files("enron4/train/spam")) + list(paths.list_files("hw1/train/ham")) + list(paths.list_files("hw1/train/spam")))
+    filePaths = (list(paths.list_files("Datasets/enron1/train/ham")) +
+                 list(paths.list_files("Datasets/enron1/train/spam")) + list(paths.list_files("Datasets/enron4/train/ham")) + list(paths.list_files("Datasets/enron4/train/spam")) + list(paths.list_files("Datasets/hw1/train/ham")) + list(paths.list_files("Datasets/hw1/train/spam")))
 
     vocabulary = set()
     for filePath in filePaths:
