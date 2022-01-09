@@ -38,8 +38,8 @@ def word_probs():
 
 def predict():
     # Defining the list of path where all the test data files are stored.
-    filePaths = (list(paths.list_files("enron1/test/ham")) + list(paths.list_files("enron4/test/ham")) + list(paths.list_files("hw1/test/ham"))
-                 + list(paths.list_files("enron1/test/spam")) + list(paths.list_files("enron4/test/spam")) + list(paths.list_files("hw1/test/spam")))
+    filePaths = (list(paths.list_files("Datasets/enron1/test/ham")) + list(paths.list_files("Datasets/enron4/test/ham")) + list(paths.list_files("Datasets/hw1/test/ham"))
+                 + list(paths.list_files("Datasets/enron1/test/spam")) + list(paths.list_files("Datasets/enron4/test/spam")) + list(paths.list_files("Datasets/hw1/test/spam")))
 
     # Creating a test dataset using BOW_test method of Bag_of_words.py file.
     test_data, true_y = BOW_test(filePaths)
