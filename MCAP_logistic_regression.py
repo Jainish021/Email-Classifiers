@@ -13,8 +13,8 @@ learning_rate = 0.001
 epochs = 200
 
 # Defining the list of path where all the test data files are stored.
-filePaths = (list(paths.list_files("enron1/test/ham")) + list(paths.list_files("enron4/test/ham")) + list(paths.list_files("hw1/test/ham"))
-             + list(paths.list_files("enron1/test/spam")) + list(paths.list_files("enron4/test/spam")) + list(paths.list_files("hw1/test/spam")))
+filePaths = (list(paths.list_files("Datasets/enron1/test/ham")) + list(paths.list_files("Datasets/enron4/test/ham")) + list(paths.list_files("Datasets/hw1/test/ham"))
+             + list(paths.list_files("Datasets/enron1/test/spam")) + list(paths.list_files("Datasets/enron4/test/spam")) + list(paths.list_files("Datasets/hw1/test/spam")))
 
 
 # Function to load the bag of words data from the Bag_of_words.py file and for splitting the data in the 70/30.
