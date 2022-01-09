@@ -8,8 +8,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 vocabulary = vocab()
 
 # Defining the list of path where all the training data files are stored.
-filePaths = (list(paths.list_files("enron1/train/ham")) + list(paths.list_files("enron4/train/ham")) + list(paths.list_files("hw1/train/ham"))
-             + list(paths.list_files("enron1/train/spam")) + list(paths.list_files("enron4/train/spam")) + list(paths.list_files("hw1/train/spam")))
+filePaths = (list(paths.list_files("Datasets/enron1/train/ham")) + list(paths.list_files("Datasets/enron4/train/ham")) + list(paths.list_files("Datasets/hw1/train/ham"))
+             + list(paths.list_files("Datasets/enron1/train/spam")) + list(paths.list_files("Datasets/enron4/train/spam")) + list(paths.list_files("Datasets/hw1/train/spam")))
 
 # Reading all training data file and preparing a corresponding features*example matrix for bag_of_words model using CountVectorizer() method.
 vec = CountVectorizer()
@@ -56,8 +56,8 @@ def BOW_test(filePaths):
 # Defining a ham function to create a features*example matrix of ham training data.
 def ham():
     # Defining the list of path where all the ham training data files are stored.
-    filePaths = (list(paths.list_files("enron1/train/ham")) + list(
-        paths.list_files("enron4/train/ham")) + list(paths.list_files("hw1/train/ham")))
+    filePaths = (list(paths.list_files("Datasets/enron1/train/ham")) + list(
+        paths.list_files("Datasets/enron4/train/ham")) + list(paths.list_files("Datasets/hw1/train/ham")))
 
     data = []
 
@@ -79,8 +79,8 @@ def ham():
 # Defining a spam function to create a features*example matrix of spam training data.
 def spam():
     # Defining the list of path where all the spam training data files are stored.
-    filePaths = (list(paths.list_files("enron1/train/spam")) + list(
-        paths.list_files("enron4/train/spam")) + list(paths.list_files("hw1/train/spam")))
+    filePaths = (list(paths.list_files("Datasets/enron1/train/spam")) + list(
+        paths.list_files("Datasets/enron4/train/spam")) + list(paths.list_files("Datasets/hw1/train/spam")))
 
     data = []
 
